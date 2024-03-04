@@ -1,0 +1,939 @@
+/* Group Project Authors: Bijaya Sharma, Prabin Ghimire, Milan Chaulagain, Sudeep Bohora */
+/* Reset margin padding to 0 */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; /* Individual element padding wont get added to width of container */
+}
+
+/* Main Styling */
+html,
+body {
+  font-family: sans-serif, Tahoma, Geneva, Verdana;
+  line-height: 1.7em;
+}
+
+a {
+  text-decoration: none;
+}
+
+.btn {
+  display: inline-block;
+  font-size: 18px;
+  color: #fff;
+  background: #cc9544;
+  padding: 13px 20px;
+  border: none;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background: #ad7a30;
+}
+
+/* Navbar styling */
+header {
+  max-width: 100%;
+  background-color: #3a1e0c;
+  color: #fff;
+  text-align: center;
+  height: 175px;
+}
+
+/* Logo styling */
+.logo {
+  float: none;
+  text-align: center;
+  padding-top: 10px;
+}
+
+.logo img {
+  border-radius: 60%;
+  opacity: 0.8;
+  display: inline-block;
+  margin: 0 auto;
+  max-height: 40px; /* Adjusted maximum height for the logo on mobile */
+}
+
+/* Nav links styling */
+#navbar {
+  height: auto;
+  padding-top: 10px;
+}
+
+#navbar ul,
+#navbar ul li {
+  float: none;
+  text-align: center;
+  display: block;
+  margin: 0;
+}
+
+#navbar ul li a {
+  padding: 5px;
+  color: #fff;
+  text-align: center;
+}
+
+/* Add color to nav link currently displayed */
+#navbar ul li a:hover,
+#navbar ul li a.current {
+  color: #cc9544;
+}
+
+/* Showcase styling */
+#showcase {
+  background: url("../img/banner.jpg") no-repeat center center/cover;
+  height: 700px;
+}
+
+#showcase .showcase-content {
+  color: #fff;
+  text-align: center;
+  padding-top: 170px;
+}
+
+#showcase .showcase-content h1 {
+  font-size: 60px;
+  line-height: 1.2em;
+  padding-bottom: 20px;
+}
+
+#showcase .showcase-content p {
+  padding-bottom: 20px;
+  line-height: 1.7em;
+}
+
+.showcase-text {
+  font-size: 20px;
+}
+
+.highlight-text {
+  color: #e8a849;
+  position: relative;
+}
+
+.container {
+  margin: auto;
+  max-width: 1100px;
+  /*overflow: auto;*/
+  padding: 0 20px;
+}
+
+/* -----------------contact us page styling----------------------*/
+
+.contact-main {
+  max-width: 90%;
+  margin: 10px auto;
+  padding: 20px 40px;
+  align-items: center;
+  background-color: #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  background: linear-gradient(#e6e6e6);
+  display: block;
+  border-radius: 10px;
+  /* flex-direction: column; */
+}
+/*style for form*/
+form {
+  margin-top: 20px;
+}
+
+label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: bold;
+}
+
+input,
+textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 16px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+button {
+  background-color: #333;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 34px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #555;
+}
+.head {
+  padding: 1em;
+  text-align: center;
+  color: #3a1e0c;
+}
+
+/* styling for Map*/
+
+.map-responsive-container {
+  overflow: hidden;
+  padding-bottom: 56.25%;
+  position: relative;
+  height: 0;
+  width: 90%;
+  margin: 0 auto;
+}
+
+.map-responsive-container iframe {
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  padding-top: 5%;
+  padding-bottom: 5%;
+}
+/*css for table*/
+
+.operation-table {
+  padding: 0.1em;
+  margin: 0 auto;
+  margin-top: 5%;
+  position: relative;
+}
+
+.contact-form {
+  position: relative;
+}
+
+table {
+  width: 100%;
+  font-size: 0.7em;
+  border: 1px solid;
+  border-collapse: collapse;
+  background-color: antiquewhite;
+}
+
+table caption {
+  font-size: 1.2em;
+  padding-bottom: 2%;
+  background-color: #3a1e0c;
+  color: #fff;
+}
+
+th,
+td {
+  border: 1px solid rebeccapurple;
+  padding: 5px;
+}
+caption {
+  padding: 5px;
+  border: black 1px solid;
+}
+
+
+
+/* ------------Prabin -Css for courses page--------------- */
+
+.course-container {
+  max-width: 100%;
+  margin-top: 15px;
+  margin-right: auto;
+  margin-left: auto;
+  padding:0 20px;
+  overflow: auto;
+
+
+}
+
+
+
+
+
+
+
+.course {
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  overflow: hidden;
+  background-color: #3a1e0c;
+  color: #fff;
+  height:auto;
+}
+
+
+.course img {
+  width: 100%; /* Set the width to 100% for smaller screens */
+  float: left; /* Remove the float to center the image */
+  margin: 0 auto; /* Center the image using auto margins */
+  height: auto;
+}
+
+
+.course-info {
+  padding: 20px;
+  overflow: hidden;
+}
+
+.course-title {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.course-description {
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+.course-table {
+  width: 100%;
+  margin-top: 20px;
+  border-collapse: collapse;
+  border-spacing: 0;
+  margin-bottom: 20px;
+}
+
+.btn-secondary {
+  margin-top:5%;
+  /* position: fixed; */
+  bottom: 10px;
+  right: 10px;
+  display: inline-block;
+  padding: 8px 16px;
+  font-size: 14px;
+  text-align: center;
+  cursor: pointer;
+  outline: none;
+  color: #fff;
+  background-color: #cc9544;
+  border: none;
+  border-radius: 8px;
+  text-decoration: none;
+
+}
+
+.btn-secondary:hover {
+  background-color: #ad7a30;
+}
+
+
+.course-table th,
+.course-table td {
+  border: 3px solid #3a1e0c;
+  font-weight: bold;
+  padding: 8px;
+  text-align: left;
+  /* margin-bottom: 2px; */
+}
+
+.course-table th {
+  background-color: #3a1e0c;
+  color: white;
+}
+
+/*footer styling*/
+
+/* Footer Styling */
+footer #main-footer {
+  width: 100%;
+  float: clear;
+  text-align: center;
+  background: #3a1e0c;
+  padding: 20px;
+  color: #fff;
+  overflow: auto;
+  /* position:fixed;  */
+  bottom: 0;
+}
+
+
+/* Courses Intro Styling */
+.course-box {
+  max-width: 100%;
+  min-height: 365px;
+  margin: 20px;
+  float: left;
+  border: 1px solid #cc9544;
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+/* Alternate color styling for first and second card */
+.upper-content {
+  padding: 10px 0px;
+  text-align: center;
+  overflow: hidden;
+  background-color: #cc9544;
+  color: #fff;
+}
+
+/* Alternate styling for middle card */
+.upper-secondary-content {
+  padding: 10px 0px;
+  text-align: center;
+  overflow: hidden;
+  background-color: #3a1e0c;
+  color: #fff;
+}
+
+.course-box img {
+  max-width: 100%;
+  height: auto;
+}
+
+.courses-info {
+  padding: 20px;
+}
+h3 {
+  margin-top: 0;
+}
+
+/* Courses card alternate styling in home page */
+.middle-card {
+  text-align: center;
+  overflow: hidden;
+  background-color: #3a1e0c;
+  color: #fff;
+}
+
+.primary-card {
+  text-align: center;
+  overflow: hidden;
+  background-color: #ad7a30;
+  color: #fff;
+}
+
+.course-heading {
+  padding: 10px;
+}
+
+.clr {
+  float: clear;
+}
+.info-img {
+  display: none;
+}
+.content-info {
+  float: none;
+  width: 100%;
+  /* height: 100%; */
+  text-align: center;
+  padding: 50px 30px;
+  /* overflow: hidden; */
+  background-color: #3a1e0c;
+  color: #fff;
+}
+.home-info-heading {
+  font-size: 20px;
+  line-height: 2em;
+  padding-bottom: 20px;
+  margin-top: 10px;
+}
+.home-info-content {
+  margin-bottom: 30px;
+  line-height: 2em;
+  font-size: 17px;
+}
+
+
+
+/*-------------style for about us--------------*/
+#amain div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 20px;
+  background-color: #fff;
+  margin-top: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+#amain div img {
+  max-width: 100%;
+  border-radius: 8px;
+  margin-bottom: 20px;
+}
+
+#amain div h1 {
+  font-size: 2em;
+  color: #333;
+}
+
+.acontent {
+  max-width: 800px;
+  margin: 20px auto;
+}
+
+#ap1 {
+  line-height: 1.6;
+  color: #555;
+}
+
+.asection {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 40px 0;
+  gap: 2rem;
+}
+.aparagraph {
+  width: 90%;
+}
+.asection img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+.asection2 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 40px 0;
+  gap: 2rem;
+}
+.amission {
+  width: 90%;
+}
+.asection2 iframe {
+  max-width: 100%;
+  height: 350px;
+  border-radius: 8px;
+}
+
+.aintro-hero {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10px;
+}
+.aintro-hero h1{
+  padding: 1em;
+  text-align: center;
+  color: #3a1e0c;
+}
+
+.aintro {
+  width: 100%;
+  height: 50%;
+}
+
+.atext {
+  position: absolute;
+  top: 50%;
+  right: 41%;
+  color: #ffffff;
+}
+#aWhy {
+  text-align: left;
+  color: #333;
+  padding: 1em;
+}
+#amission h2 {
+  text-align: left;
+  color: #333;
+}
+
+#amiss{
+  padding: 1em;
+}
+
+
+.aheading {
+  text-align: center;
+}
+#apic {
+  color: #333;
+}
+#aimage-galary {
+  max-width: 100%;
+  margin: 10px 0;
+}
+
+#aimage-galary img {
+  height: 280px;
+  width: 100%;
+  object-fit: cover;
+  margin: 10px;
+}
+
+/* Footer Styling */
+footer #main-footer {
+  width: 100%;
+  float: clear;
+  text-align: center;
+  background: #3a1e0c;
+  padding: 20px;
+  color: #fff;
+  overflow: auto;
+}
+
+.hideshowtablet, .hideshowdesktop{
+  display:none;
+}
+
+/* Media Query for Tablets */
+@media only screen and (min-width: 600px) {
+  /* Make showcase heading underlined */
+  .highlight-text::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -2px; /* Adjust this value to control the curvature */
+    width: 100%;
+    height: 3px;
+    background-color: #cc9544;
+    border-radius: 3px; /* Adjust this value to control the curvature */
+  }
+
+  .hideshowtablet{
+    display: none;
+  }
+
+  /* Header Styling */
+  .course img {
+    width: 50%; /* Set the width to 100% for smaller screens */
+    float: left; /* Remove the float to center the image */
+    margin: 0 auto; /* Center the image using auto margins */
+    height: 100%;
+  }
+  .course{
+    height:300px;
+  }
+
+  header {
+    height: 55px;
+  }
+
+  /*logo styling*/
+  .logo {
+    float: left;
+    margin-left: 60px;
+  }
+
+  .logo-img {
+    max-width: 100%;
+  }
+
+  /* Navbar Styling */
+  #navbar ul {
+    list-style: none;
+    float: right;
+  }
+  #navbar ul li {
+    margin-top: 5px;
+    display: inline-block;
+  }
+  #navbar ul li:last-child {
+    margin-right: 15px;
+    display: inline-block;
+  }
+
+  .course-box {
+    margin: 20px;
+  }
+  .info-img {
+    display: none;
+  }
+
+  /* First section styling */
+  #home-info .content-info {
+    float: none;
+    /* width: 100%;
+    height: 100%; */
+    text-align: center;
+    padding: 50px 30px;
+    overflow: hidden;
+    background-color: #3a1e0c;
+    color: #fff;
+  }
+  .home-info-heading {
+    font-size: 30px;
+    line-height: 1.2em;
+    padding-bottom: 20px;
+    margin-top: 4px;
+  }
+  .home-info-content {
+    margin-bottom: 30px;
+    line-height: 2em;
+    font-size: 17px;
+  }
+  /* style for contact us page*/
+  input,
+  textarea {
+    margin-bottom: 10px;
+  }
+
+  button {
+    padding: 8px 16px;
+    font-size: 16px;
+  }
+
+  td,
+  th {
+    padding: 0.9em;
+  }
+  /*--------------style for about us-----------*/
+
+  .asection img {
+    max-width: 100%;
+  }
+
+  .asection img {
+    max-width: 100%;
+    border-radius: 8px;
+    object-fit: cover;
+    height: 380px;
+  }
+
+  .aintro {
+    height: 50%;
+  }
+
+  #aWhy {
+    text-align: left;
+    color: #333;
+  }
+  #amiss {
+    text-align: left;
+    color: #333;
+  }
+
+  .asection p {
+    max-width: 800px;
+    margin: 40px auto;
+  }
+  .asection2 p {
+    max-width: 800px;
+    margin: 40px auto;
+  }
+
+  #aimage-galary {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+  }
+
+  #aimage-galary img {
+    max-width: 100%;
+    width: 300px;
+    height: 200px;
+    border-radius: 8px;
+    object-fit: cover;
+  }
+}
+
+
+/* Media Query for Desktop */
+@media only screen and (min-width: 769px) {
+  /* Make showcase heading underlined */
+  .highlight-text::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -2px;
+    width: 100%;
+    height: 3px;
+    background-color: #cc9544;
+    border-radius: 3px; /* Adjust this value to control the curve */
+
+
+
+  }
+  .course{
+    height: 300px;
+    width: 100%;
+  }
+
+  .course img {
+    width: 30%;
+    float: left;
+    margin: 0 auto;
+    max-height: 100%;
+  }
+
+  .hideshowdeskop, .hideshowtablet{
+    display: inline
+  }
+
+
+
+  /* Navbar styling */
+  #navbar ul li a {
+    font-size: 20px;
+  }
+  #navbar ul li:last-child {
+    margin-right: 15px;
+  }
+
+  #navbar ul li {
+    padding-left: 35px;
+    display: inline-block;
+  }
+
+  /* Home Info */
+  #home-info {
+    height: 400px;
+  }
+
+  #home-info .info-img {
+    display: block;
+    float: left;
+    width: 45%;
+    background: url("../img/bg_1.jpg") no-repeat;
+    background-size: cover;
+    min-height: 100%;
+  }
+
+  #home-info .content-info {
+    float: right;
+    width: 55%;
+    height: 100%;
+    text-align: center;
+    padding: 30px 30px;
+    overflow: hidden;
+    background-color: #3a1e0c;
+    color: #fff;
+  }
+
+  .home-info-heading {
+    font-size: 30px;
+    line-height: 1.2em;
+    padding-bottom: 20px;
+    margin-top: 4px;
+  }
+
+  .home-info-content {
+    margin-bottom: 30px;
+    line-height: 2em;
+    font-size: 17px;
+  }
+
+  /* Courses Intro */
+  .course-box {
+    width: calc(33.33% - 40px);
+    margin: 20px; /* Adjust the margin as needed */
+  }
+  /*reaponsive for contact us page*/
+  input,
+  textarea {
+    margin-bottom: 10px;
+  }
+  /* .contact-main {
+    height: 80%;
+  } */
+
+  .operation-table {
+    padding: 0;
+    max-width: 44%;
+  }
+  .contact-form {
+    width: 50%;
+    float: left;
+  }
+  .contact-main {
+    display: flex;
+    margin: 0 3%;
+  }
+  table,
+  th,
+  td {
+    font-size: 15px;
+  }
+  table caption {
+    font-size: 20px;
+    font-weight: bold;
+  }
+  /*style for about us page*/
+  .asection {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+  }
+
+  .asection2 {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+  }
+  .aintro {
+    height: 60vh;
+    width: 500vh;
+  }
+  .aparagraph {
+    max-width: 40%;
+    float: right;
+  }
+  .amission {
+    max-width: 40%;
+    float: left;
+  }
+
+  .acoffee-image {
+    max-width: 50%;
+    min-height: 100%;
+    float: left;
+    padding: 10px;
+  }
+  .avideo {
+    max-width: 50%;
+    min-height: 100%;
+    float: right;
+    padding: 10px;
+  }
+
+  .acontainer {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+
+  /* Heading Styles */
+  .aheading {
+    text-align: center;
+  }
+
+  #apic {
+    color: #333;
+  }
+
+  /* Image Gallery Styles */
+  #abox {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+
+  #aimage-galary {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+  }
+
+  #aimage-galary {
+    flex: 1;
+    margin: 10px;
+  }
+
+  #aimage-galary img {
+    max-width: 100%;
+    width: 300px;
+    height: 200px;
+    border-radius: 8px;
+    object-fit: cover;
+  }
+
+}
+
+
+
+
+
